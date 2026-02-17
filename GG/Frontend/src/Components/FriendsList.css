@@ -1,0 +1,177 @@
+.screen-Background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4; /* Neutral grey background */
+}
+
+.friends-list-container {
+    width: 450px; /* Fixed width */
+    height: 500px; /* Fixed height */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* White container background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items at the top */
+    overflow: hidden; /* Prevent overflow */
+    box-shadow: 0 4px 15px rgba(99, 68, 166, 0.5); /* Box shadow with specified color */
+}
+
+.friends-list-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.instructions {
+    font-size: 14px;
+    color: #555; /* Muted instructional text color */
+    margin-bottom: 20px;
+}
+
+.no-friends-message {
+    font-size: 16px;
+    color: #777;
+    margin-top: 20px;
+}
+
+.friends-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of friend chips */
+    gap: 10px; /* Space between chips */
+    justify-content: center; /* Center-align the grid */
+    align-content: flex-start; /* Align content at the top */
+    height: calc(100% - 100px); /* Adjust height to fit within container */
+    overflow: auto; /* Add scrolling if necessary */
+}
+
+.friend-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0f7fa;
+    color: #00796b;
+    border-radius: 15px; /* Rounded corners for chips */
+    padding: 5px 10px; /* Adjust padding for a clean look */
+    font-size: 14px; /* Font size for usernames */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    white-space: nowrap; /* Prevent wrapping of names */
+    max-width: 100%; /* Ensure the chip doesn’t exceed container width */
+}
+
+.friend-chip:hover {
+    background-color: #b2dfdb;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.remove-icon {
+    margin-left: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff5252;
+    cursor: pointer;
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-back {
+    background-color: #6344A6; /* Purple background for consistency */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-back:hover {
+    background-color: #502e8c; /* Darker purple on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.btn-back:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(99, 68, 166, 0.3);
+}
+
+.btn-back:active {
+    background-color: #7a5cb2; /* Lighter purple on click */
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Two-column layout for the MBTI/Zodiac selects */
+.filter-section .two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+/* Spread the Apply/Clear buttons left and right, equal widths */
+.filter-section .btn-row.spread {
+  display: flex;
+  justify-content: space-between; /* pushes them to opposite sides */
+  gap: 0;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.filter-section .btn-row.spread .filter-btn {
+  flex-basis: 48%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  background-color: #6344A6;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.filter-section .btn-row.spread .filter-btn:hover {
+  background-color: #4b3387;
+  transform: translateY(-2px);
+}
+
+/* Label aesthetics */
+.filter-label {
+  display: block;
+  font-weight: 600;
+  margin: 6px 0 6px;
+  color: #364659;
+}
+
+/* Mobile: stack the buttons */
+@media (max-width: 768px) {
+  .filter-section .two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-section .btn-row.spread {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .filter-section .btn-row.spread .filter-btn {
+    flex-basis: auto;
+    width: 100%;
+  }
+}

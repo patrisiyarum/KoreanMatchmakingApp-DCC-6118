@@ -1,0 +1,49 @@
+.vr-root {
+  position: relative;
+  min-height: 100vh;
+  background: #fff;
+}
+
+/* fixed top bar */
+.vr-topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 8px 12px;
+  z-index: 1000;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.vr-left, .vr-center, .vr-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.vr-left { justify-content: flex-start; }
+.vr-center { justify-content: center; }
+.vr-right { justify-content: flex-end; }
+
+.vr-btn {
+  margin: 0 !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* video region sits below topbar */
+.vr-content { padding-top: 64px; }
+
+.videos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: calc(100vh - 64px);
+}

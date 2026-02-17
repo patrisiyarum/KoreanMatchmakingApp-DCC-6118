@@ -1,0 +1,112 @@
+/* Reset just what we need here to avoid spilling onto other pages */
+.video-call-container {
+  background: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+  position: relative;
+}
+
+/* Home button placement */
+.vc-home-btn-wrap {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 1000;
+}
+
+/* Card layout for a clean, intuitive join flow */
+.join-card {
+  width: 100%;
+  max-width: 560px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  padding: 24px 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Headings */
+.join-title {
+  margin: 0;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 800;
+  color: #232323;
+}
+
+.join-subtitle {
+  margin: -6px 0 0;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Form */
+.join-form {
+  display: grid;
+  gap: 8px;
+}
+
+.join-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.join-error {
+  color: #dc3545;
+  font-size: 13px;
+}
+
+/* Actions: evenly spaced, consistent sizing */
+.join-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.btn-cta,
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 42px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 15px;
+  border: none;
+  transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.10);
+}
+
+/* Primary action */
+.btn-cta {
+  background: #5b3caf;        /* your app purple */
+  color: #fff;
+}
+.btn-cta:hover {
+  background: #4d3393;
+  transform: translateY(-1px);
+}
+
+/* Secondary action */
+.btn-ghost {
+  background: #e9e9f3;
+  color: #2c2c34;
+}
+.btn-ghost:hover {
+  background: #dedff2;
+  transform: translateY(-1px);
+}
+
+/* Responsive stacking */
+@media (max-width: 560px) {
+  .join-actions {
+    grid-template-columns: 1fr;
+  }
+}

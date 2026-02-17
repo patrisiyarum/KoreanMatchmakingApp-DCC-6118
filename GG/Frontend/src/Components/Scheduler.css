@@ -1,0 +1,114 @@
+.screen-Background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  padding: 40px 0;
+}
+
+.scheduler-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.scheduled-meetings-box {
+  background: white;
+  padding: 25px;
+  width: 350px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(99, 68, 166, 0.35);
+}
+
+.scheduled-meetings-box h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  z-index: 10;
+}
+
+.meeting-list {
+  list-style-type: none;
+  padding: 0;
+  z-index: 1;
+}
+
+.meeting-item {
+  background: #fafafa;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border-left: 4px solid #7a5cb2;
+
+  cursor: pointer; 
+  pointer-events: auto;  
+}
+
+.friends-list-container {
+  width: 450px;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(99, 68, 166, 0.5);
+  text-align: center;
+}
+
+.friends-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.friend-chip {
+  padding: 6px 12px;
+  background: #e0f7fa;
+  color: #00796b;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.friend-chip:hover {
+  background: #b2dfdb;
+}
+
+.time-dropdown {
+  margin-left: 8px;
+  padding: 6px;
+}
+
+.btn-confirm {
+  margin-top: 12px;
+  background-color: #7a5cb2;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-confirm:hover {
+  background-color: #6344A6;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.btn-back-02 {
+  background-color: #6344A6;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-back-02:hover {
+  background-color: #4e2f89;
+}

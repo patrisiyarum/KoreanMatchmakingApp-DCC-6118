@@ -1,0 +1,99 @@
+.screen-Background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.screen-Container {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Space out content with buttons at the bottom */
+    max-width: 600px; /* Keep the container size larger */
+    width: 100%;
+    height: 100%; /* Stretch container height to fit content */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(99, 68, 166, 0.5); /* Box shadow with specified color */
+    padding: 20px;
+    box-sizing: border-box; /* Ensure consistent padding behavior */
+    animation: fadeIn 0.5s ease-in;
+}
+
+.screen-Content {
+    text-align: center;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.dropdown-container {
+    margin-bottom: 1.5rem; /* Extra space below the dropdown */
+}
+
+.user-report-dropdown {
+    width: 100%;
+}
+
+.textarea-container {
+    margin: 0; /* Ensure the textbox is aligned directly below */
+    display: flex;
+}
+
+.user-report-textarea {
+    width: 100%;
+    max-width: 360px;
+    height: 100px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Space between buttons */
+    align-items: center; /* Center buttons horizontally */
+    margin-top: auto; /* Push the buttons to the bottom of the container */
+    width: 100%; /* Ensure buttons fit the container width */
+    padding-bottom: 20px; /* Add padding to create some space at the very bottom */
+}
+
+.btn-back-02 {
+    background: #6344A6;
+    width: 50%;
+    margin-left: 0;
+    height: 100%;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-fetch {
+    background: #6344A6;
+    width: 50%;
+    height: 100%;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

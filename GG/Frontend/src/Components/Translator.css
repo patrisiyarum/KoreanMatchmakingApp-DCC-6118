@@ -1,0 +1,92 @@
+/* true */
+.screen-Background {
+  background-color: #000000;
+  min-height: 100vh;          
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen-Container {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.screen-Content {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.translator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.translator-content {
+  width: 100%;
+  max-width: 900px;
+  padding: 24px 32px;
+  border-radius: 16px;
+  background: transparent;
+}
+
+.translator-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #000000; /* white title pops on black bg */
+}
+
+/* Two-column panel */
+.translator-panel {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.translator-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.translator-label {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  color: #000000;
+}
+
+/* Grey boxes */
+.translator-box {
+  width: 100%;
+  min-height: 140px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  background-color: #e0e0e0;
+  color: #000000;
+  resize: vertical;
+  font-size: 0.95rem;
+}
+
+.translator-box::placeholder {
+  color: #000000;
+}
+
+/* Buttons row */
+.translator-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.translator-btn {
+  min-width: 140px;
+  color: #000000;
+}

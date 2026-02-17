@@ -1,0 +1,171 @@
+.screen-Background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.screen-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 600px;
+    width: 100%;
+    /* Fixed height similar to reference, but handled content overflow */
+    height: 80vh; 
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(99, 68, 166, 0.5);
+    padding: 20px;
+    box-sizing: border-box;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.screen-Content {
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    flex-shrink: 0;
+}
+
+/* Filter Styling */
+.filter-container {
+    margin-bottom: 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex-shrink: 0;
+}
+
+.filter-label {
+    font-size: 0.9rem;
+    color: #666;
+    margin-left: 5px;
+}
+
+.date-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+/* Transcript List Styling */
+.transcript-list-container {
+    flex-grow: 1;
+    overflow-y: auto; /* Allows scrolling within the card */
+    margin-bottom: 1rem;
+    padding-right: 5px; /* Space for scrollbar */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Scrollbar styling for webkit browsers */
+.transcript-list-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.transcript-list-container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.transcript-item {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: left;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.transcript-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.transcript-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+    color: #6344A6;
+    font-weight: bold;
+}
+
+.transcript-preview {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 0 0 10px 0;
+    line-height: 1.4;
+}
+
+.btn-view-details {
+    background: transparent;
+    border: 1px solid #6344A6;
+    color: #6344A6;
+    padding: 5px 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: all 0.2s;
+}
+
+.btn-view-details:hover {
+    background: #6344A6;
+    color: white;
+}
+
+/* Button Container from Reference */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: auto;
+    width: 100%;
+    padding-bottom: 0;
+    flex-shrink: 0;
+}
+
+.btn-back-02 {
+    background: #6344A6;
+    width: 50%;
+    margin-left: 0;
+    height: 45px; /* Fixed height for consistency */
+    border-radius: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.btn-back-02:hover {
+    background: #503685;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
